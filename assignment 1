@@ -1,0 +1,21 @@
+//Program to fins given no is palindrome or not//
+#include <stdio.h>
+#include<conio.h>
+int main() {
+    int n,num,rev=0,rem;
+    scanf("%d",&n);    
+    num=n;
+    while (n>0)
+	{
+        rem=n%10;
+        rev=rev*10+rem;
+        n=n/10;
+    }
+    if (num==rev){
+        printf("Palindrome "); 
+    }
+    else{
+        printf("Not a Palindrome"); 
+    }    
+    return 0; 
+} 
